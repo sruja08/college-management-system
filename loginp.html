@@ -1,0 +1,61 @@
+<html>
+<head>
+
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body background="bg.jpg" bgcolor="dark blue">
+<form action="login.php" method="POST">
+      <div id="login-box">
+        <div class="left-box">
+          <h1>LOGIN</h1>
+           <label>Email:</label>
+<input type="text" name="Email" onkeydown="myfunc(event)" required  class="form-control" id="emails" autocomplete="off">
+<span id="emailids" class="text-danger font-weight-bold"></span>
+           
+<label>Password:</label>
+<input type="password" name="Password" onkeydown="myfunc(event)" required  class="form-control" id="pass" autocomplete="off">
+<span id="passwords" class="text-danger font-weight-bold"></span>
+
+          
+          
+             <a href="showc1.html"><input type="submit"  value="Sign in"/> </a><br><br>
+      <h1>New User?<a href="log2.html"> SignUP</a></h1>
+         </div>
+    <div class="right">
+</div>
+</div>     
+</form>
+
+
+<script type="text/javascript">
+function validation(){
+var emails=document.getElementById('Email').value;
+var pass=document.getElementById('Password').value;
+if(emails == "")
+{
+document.getElementById('emailids').innerHTML= " **please enter valid email-id"
+return false;
+}
+if(emails.indexOf('@')<= 0){
+document.getElementById('emailids').innerHTML= " ** @ invalid position";
+return false;
+}
+if((emails.charAt(emails.length-4)!='.') && (emails.charAt(emails.length-3)!='.'))
+{
+document.getElementById('emailids').innerHTML= " ** . invalid position";
+return false;
+}
+}
+if(pass == "")
+{
+document.getElementById('passwords').innerHTML= " **Please fill the password field";
+return false;
+}
+if((pass.length<= 5 ) || (pass.length > 20))
+{
+document.getElementById('passwords').innerHTML= " **passwords length must be between 5 and 20";
+return false;
+}
+</script>
+</body>
+</html>

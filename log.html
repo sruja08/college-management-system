@@ -1,0 +1,33 @@
+<html>
+<head>
+
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body color ="blue">
+  <form action="log.php" method="POST">
+      <div id="login-box">
+         <div class="left-box">
+          <h1>sign up </h1>
+           <input type="text" name="UserName" >
+           <label>Email:</label>
+<input type="text" name="Email" onkeydown="myfunc(event)" required  class="form-control" id="emails" autocomplete="off">
+<span id="emailids" class="text-danger font-weight-bold"></span>   
+    
+           <input type="Password" name="pass" placeholder="Password"/>
+          <label>Confirm password:</label>
+<input type="password" name="pass"  onkeydown="myfunc(event)" required class="form-control" id="conpass" autocomplete="off">
+<span id="confirmpass" class="text-danger font-weight-bold"></span>
+</div>
+          <a href="cusemp.html"> <input type="submit" value="signup"> </a><br><br>
+         </div>
+         <div class="right-box">
+         </div>
+      </div>
+</form>
+
+
+
+
+
+</body>
+</html>

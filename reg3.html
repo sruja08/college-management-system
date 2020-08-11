@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+	
+<title> Result </title> 
+<link rel="stylesheet" type="text/css" href="logincss.css"
+link rel="stylesheet" type="text/css"
+href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+>
+<body style="background-image: url(ss.jpg);background-repeat: no-repeat;background-size: cover">
+<style>
+	.button2 {background-color: #4d79ff;} 
+	.button {
+  background-color: #4d79ff;
+ /* Green */
+  border: none;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 12px;
+  box-shadow: 0 4px #999;
+}
+
+</style>
+<body>   
+<div class="col-md-6 login-right">
+<font color="0000ff"><h2>Result Upload</h2></font>
+<form action="new2.php" method="post">
+<div class="form-group">
+<br>
+<label style="padding: 10px">USN</label>
+<input type="text" name="ROLL_NO" id='u1' style="margin-left: 48px" onkeydown="checkforblank()" required>
+</div>
+<div class="form-group">
+<br>
+<label style="padding: 10px">Dept</label>
+<input type="text" name="dept" id='u1' style="margin-left: 48px" onkeydown="checkforblank()" required>
+</div>
+<br>
+<div class="form-group">
+<label style="padding: 10px">Course code</label>
+<input type="text" name="c_code" id='u2' style="margin-left:0.5px" onkeydown="checkforblank1()" required>
+</div>
+<br>
+<div class="form-group">
+<label style="padding: 10px">Sem</label>
+<input type="number" name="sem" id='u2' style="margin-left: 51px" pattern="[0-8]" onkeydown="checkforblank1()" required>
+</div>
+<br>
+<div class="form-group">
+<label style="padding: 10px">IA1</label>
+<input type="number" name="ia1" id='u2'style="margin-left: 54px" onkeydown="checkforblank1()" required>
+</div>
+<br>
+<div class="form-group">
+<label style="padding: 10px" >IA2</label>
+<input type="number" maxlength="10" name="ia2" style="margin-left: 54px" required onkeydown="myfunc(event)">
+</div>
+<br>
+<div class="form-group">
+<label style="padding: 10px" >IA3</label>
+<input type="number" name="ia3" style="margin-left: 54px" required onkeydown="myfunc(event)">
+</div>
+<br>
+<button type="submit" class=" button button2" style="padding: 8px 12px" >Submit</button>
+</form>
+</div>
+</body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+<script src="d.js"></script>
+</html>
